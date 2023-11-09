@@ -3,8 +3,10 @@ import { creditCard } from "../api/authApi";
 import { useRecoilState } from "recoil";
 import { user } from "../global/recoil";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 const Send = () => {
+  const navigate  = useNavigate()
   const [state, setState] = useRecoilState<any>(user);
   console.log(setState);
   const [email, setEmail] = useState<string | any>("");
@@ -48,6 +50,7 @@ const Send = () => {
                   timerProgressBar: true,
                   timer: 3000,
                 });
+                navigate("/homepage")
               } else {
                 Swal.fire({
                   icon: "error",
