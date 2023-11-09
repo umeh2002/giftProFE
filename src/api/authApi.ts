@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url: string = "http://localhost:3933/api";
+const url: string = "https://gift-pro.onrender.com/api";
 export const createUser = async (data: any) => {
   try {
     return await axios.post(`${url}/create-user`, data).then((res: any) => {
