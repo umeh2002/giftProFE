@@ -8,7 +8,7 @@ const PrivateRoute: React.FC<PropsWithChildren> = ({ children }) => {
   const value: any = useRecoilValue(userState);
   const [state, setState] = useRecoilState<any>(user);
 
-  console.log(state);
+  console.log(state)
   let myToken: any = {};
   let tokenID: string = value;
 
