@@ -7,17 +7,6 @@ const Header = () => {
         <div className="text-black text-[30px] font-bold cursor-pointer">
           giftPro
         </div>
-        <div className="text-[20px] font-semibold flex">
-          <nav className="ml-[20px] hover:cursor-pointer duration-500 transition-all">
-            Business
-          </nav>
-          <nav className="ml-[20px] hover:cursor-pointer duration-500 transition-all">
-            Personal
-          </nav>
-          <nav className="ml-[20px] hover:cursor-pointer duration-500 transition-all">
-            Company
-          </nav>
-        </div>
         <Link to="/register">
           <button className="w-[100px] h-[40px] flex justify-center items-center bg-black text-white hover:cursor-pointer duration-500 transition-all rounded-md">
             Sign up
